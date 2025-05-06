@@ -1,0 +1,53 @@
+import json
+import os
+import datetime
+
+from Src.Domain.Menu.menu import MenuManager
+from Src.Authentication.writelogs import writelogs
+
+class signin:
+    def __init__(self):
+        pass
+
+    def get_signin(self, role):
+
+        role = role.lower()
+        
+        if role == "admin":
+            path = fr"D:\Indixpert 2025\Indixpert_Dec_Batch_2024_Restaurant_Management_System\Src\Database\Admin.json"
+        
+        elif role == "staff":
+            path = fr"D:\Indixpert 2025\Indixpert_Dec_Batch_2024_Restaurant_Management_System\Src\Database\Staff.json"
+        
+        else:
+            print("Invalid role.")
+            return
+
+        if not os.path.exists(path):
+            print(f"No {role.capitalize()} data found.")
+            return
+
+        with open(path, "r") as file:
+            try:
+                users = json.load(file)
+            except Exception as e:
+                print("Data corrupted or empty.",e)
+                data={"error":str(e) ,"date":datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
+                logs=json.dumps(data,indent=4)
+                writelogs(logs)
+                return
+            
+        self.email = input("Enter your Email Id: ")
+        self.__password = input("Enter your password: ")
+    
+
+        for user in users:
+            if user["Email"] == self.email and user["Password"] == self.__password:
+                print(f"\nSign in successful! Welcome {user['Name']}")
+                if role == "admin":
+                    print("You have full access.")
+                    MenuManager().admin_menu()
+                else:
+                    MenuManager().staff_menu()
+                return
+        print("Sign in failed! Invalid credentials.")
