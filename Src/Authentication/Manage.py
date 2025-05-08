@@ -57,7 +57,7 @@ class Menu():
             
             elif choice == 2:
                 ob=signup()
-                ob.get_signup(self)
+                ob.get_signup()
             
             else:
                 print("\nInvalid Choice! Please select from (0 to 2).")
