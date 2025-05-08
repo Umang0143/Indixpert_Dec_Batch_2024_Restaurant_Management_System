@@ -5,9 +5,6 @@ import datetime
 
 from Src.Authentication.writelogs import writelogs
 
-data=uuid.uuid1()
-id=str(data)[:6]
-
 class signup:
     def __init__(self):
         self.id=id
@@ -18,7 +15,7 @@ class signup:
     
     def get_signup(self):
         signupdict={}
-        signupdict["Id"]=self.id
+        signupdict["Id"]=str(uuid.uuid4())[:6]
         signupdict["Name"]=self.name
         signupdict["Email"]=self.email
         signupdict["Password"]=self.__password
@@ -47,4 +44,4 @@ class signup:
         signuplist.append(signupdict)
         
         with open(path,"w") as file:
-            json.dumps(signuplist,file,indent=4)
+            json.dump(signuplist,file,indent=4)
