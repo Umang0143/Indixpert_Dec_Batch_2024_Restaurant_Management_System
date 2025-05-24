@@ -3,7 +3,7 @@ import datetime
 
 from Src.Authentication.Sign_in import signin
 from Src.Authentication.Sign_up import signup
-from Src.Authentication.writelogs import writelogs
+from Src.Authentication.Writelog import writelogs
 
 class Menu():
     
@@ -13,11 +13,14 @@ class Menu():
     def menu(self):
         
         while True:
-            print("\n----- Sumang Restaurant -----")
+            print(" ")
+            print("*" * 31)
+            print("*----- Sumang Restaurant -----*")
+            print("*" * 31)
             print("1. Sign in")
             print("2. sign up")
             print("0. Exit")
-            print("*" * 30)
+            print("*" * 31)
             try:
                 choice=int(input("Enter your choice (0 to 2):- "))
             
