@@ -1,0 +1,20 @@
+{
+    "error": "module 'datetime' has no attribute 'strptime'",
+    "date": "2025-05-24 22:41:36"
+}
+{
+    "error": "module 'datetime' has no attribute 'strptime'",
+    "date": "2025-05-24 22:41:58"
+}
+{
+    "error": "module 'datetime' has no attribute 'strptime'",
+    "date": "2025-05-24 22:42:28"
+}
+{
+    "error": "module 'datetime' has no attribute 'strptime'",
+    "date": "2025-05-24 22:43:53"
+}
+{
+    "error": "cannot access local variable 'category' where it is not associated with a value",
+    "date": "2025-05-25 01:16:52"
+}
