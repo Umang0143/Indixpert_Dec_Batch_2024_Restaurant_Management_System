@@ -1,0 +1,198 @@
+{
+    "breakfast": [
+        {
+            "id": "3898cf",
+            "name": "Poha",
+            "half": 30.0,
+            "full": 50.0
+        },
+        {
+            "id": "c9791c",
+            "name": "Upma",
+            "half": 25.0,
+            "full": 40.0
+        },
+        {
+            "id": "c20ba2",
+            "name": "Idli Sambhar",
+            "half": 35.0,
+            "full": 60.0
+        },
+        {
+            "id": "718abf",
+            "name": "Masala Dosa",
+            "half": 45.0,
+            "full": 70.0
+        },
+        {
+            "id": "c4f30c",
+            "name": "Aloo Paratha",
+            "half": 40.0,
+            "full": 65.0
+        },
+        {
+            "id": "afebae",
+            "name": "Paneer Sandwich",
+            "half": 50.0,
+            "full": 80.0
+        },
+        {
+            "id": "f3bf1b",
+            "name": "Dhokla",
+            "half": 30.0,
+            "full": 50.0
+        }
+    ],
+    "lunch": [
+        {
+            "id": "c80a4b",
+            "name": "Gujarati Thali",
+            "half": 70.0,
+            "full": 130.0
+        },
+        {
+            "id": "feb0b5",
+            "name": "Paneer Butter Masala",
+            "half": 80.0,
+            "full": 140.0
+        },
+        {
+            "id": "6ca803",
+            "name": "Mix Veg",
+            "half": 50.0,
+            "full": 90.0
+        },
+        {
+            "id": "8ca4fa",
+            "name": "Jeera Rice",
+            "half": 40.0,
+            "full": 70.0
+        },
+        {
+            "id": "c06a00",
+            "name": "Roti (2 pcs)",
+            "half": 10.0,
+            "full": 20.0
+        },
+        {
+            "id": "0ad692",
+            "name": "Boondi Raita",
+            "half": 20.0,
+            "full": 30.0
+        }
+    ],
+    "dinner": [
+        {
+            "id": "d1fcbd",
+            "name": "Special Veg Thali",
+            "half": 100.0,
+            "full": 180.0
+        },
+        {
+            "id": "3bf755",
+            "name": "Palak Paneer",
+            "half": 80.0,
+            "full": 140.0
+        },
+        {
+            "id": "8eeeff",
+            "name": "Malai Kofta",
+            "half": 85.0,
+            "full": 140.0
+        },
+        {
+            "id": "48442c",
+            "name": "Veg Fried Rice",
+            "half": 60.0,
+            "full": 100.0
+        },
+        {
+            "id": "1c758e",
+            "name": "Butter Naan",
+            "half": 25.0,
+            "full": 40.0
+        },
+        {
+            "id": "d4b3ab",
+            "name": "Green Salad",
+            "half": 15.0,
+            "full": 25.0
+        }
+    ],
+    "dessert": [
+        {
+            "id": "acb8ec",
+            "name": "Gulab Jamun (2 pcs)",
+            "half": 20.0,
+            "full": 35.0
+        },
+        {
+            "id": "df6717",
+            "name": "Rasmalai (2 pcs)",
+            "half": 40.0,
+            "full": 70.0
+        },
+        {
+            "id": "c30fa7",
+            "name": "Kulfi",
+            "half": 30.0,
+            "full": 50.0
+        },
+        {
+            "id": "eb5c1b",
+            "name": "Gajar Ka Halwa",
+            "half": 40.0,
+            "full": 70.0
+        },
+        {
+            "id": "efcb06",
+            "name": "Ice Cream (1 scoop)",
+            "half": 25.0,
+            "full": 40.0
+        },
+        {
+            "id": "fd7ba3",
+            "name": "Rabdi",
+            "half": 35.0,
+            "full": 60.0
+        }
+    ],
+    "beverage": [
+        {
+            "id": "1955f2",
+            "name": "Masala Chai",
+            "half": 10.0,
+            "full": 20.0
+        },
+        {
+            "id": "e2f3a3",
+            "name": "Coffee",
+            "half": 15.0,
+            "full": 25.0
+        },
+        {
+            "id": "a8bd86",
+            "name": "Lassi",
+            "half": 20.0,
+            "full": 30.0
+        },
+        {
+            "id": "aecfe7",
+            "name": "Fresh Juice",
+            "half": 25.0,
+            "full": 40.0
+        },
+        {
+            "id": "bba9cd",
+            "name": "Mineral Water (500ml)",
+            "half": 0,
+            "full": 10.0
+        },
+        {
+            "id": "effb2c",
+            "name": "Mineral Water (1L)",
+            "half": 0,
+            "full": 20.0
+        }
+    ]
+}
