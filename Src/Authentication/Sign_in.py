@@ -1,9 +1,11 @@
 import json
 import os
 import datetime
+import getpass
 
-from Src.Domain.Menu.menu import MenuManager
-from Src.Authentication.writelogs import writelogs
+from Src.Domain.Menu.Menu import MenuManager
+from Src.Authentication.Writelog import writelogs
+from Src.Authentication.Validation import Validator
 
 class signin:
     def __init__(self):
@@ -37,9 +39,19 @@ class signin:
                 writelogs(logs)
                 return
             
-        self.email = input("Enter your Email Id: ")
-        self.__password = input("Enter your password: ")
-    
+        while True:
+            self.email = input("Enter your Email Id: ")
+            if Validator.is_valid_email(self.email):
+                break
+            else:
+                print("Invalid email format! Please enter a valid email.")
+
+        while True:
+            self.__password = getpass.getpass("Enter your password: ")
+            if Validator.is_valid_password(self.__password):
+                break
+            else:
+                print("Password too short! Please try again.")
 
         for user in users:
             if user["Email"] == self.email and user["Password"] == self.__password:
